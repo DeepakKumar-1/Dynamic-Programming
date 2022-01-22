@@ -12,7 +12,7 @@ public class LCS {
         }else{
             int op1 = lcs(s, t.substring(1));
             int op2 = lcs(s.substring(1), t);
-            int op3 = lcs(s.substring(1), t.substring(1));
+            int op3 = lcs(s.substring(1), t.substring(1));    // Not Necessary - Optional
             return Math.max(Math.max(op1, op2), op3);
         }
         
